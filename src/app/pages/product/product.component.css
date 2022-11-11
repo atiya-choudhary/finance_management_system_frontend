@@ -1,0 +1,155 @@
+/* menu */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+/* 
+.max-width {
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+} */
+
+
+/* 
+.navbar {
+	float: right;
+	width: 1000%;
+	z-index: 999;
+	padding: 50px ;
+	font-family: var(--fuentemain);
+	transition: all 0.3s ease;
+} */
+/* 
+.navbar .menu li {
+    float: right;
+	list-style: none;
+	display: inline-block;
+}
+
+.navbar .menu li a {
+    float: right;
+	color: #fff;
+	font-size: 25px;
+	font-weight: 500;
+	margin-right: 20px;
+	transition: color 0.3s ease;
+}
+
+.mat-toolbar{
+    background-color: rgb(61, 149, 231);
+} */
+
+/* image */
+
+.session1{
+   margin: 50px 15% 0 15%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 70px;
+    height: 500px;
+    width: 1000px;
+    background-color:  #ffffff;
+    border-radius: 7px 7px 7px 7px;
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    
+}
+
+.cleft{
+    margin-top: 30px;
+    object-fit: cover;
+	border-radius: 100px;
+}
+
+.cright{
+    margin-top: 100px;
+    margin-left: 50px;
+    padding-left: 20px;
+    
+}
+
+.text{
+    color: black;
+    padding-top: 40px;
+    height: 20px; 
+    font-size: 20px;
+    
+}
+ 
+
+.button{
+    
+    margin: 10px;
+    height: fit-content;
+    align-items: center;
+    width: 100px;
+    background-color: powderblue;
+    margin-top: 10px;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    display: table-cell;
+    padding: 15px 32px;
+    border-radius: 5px;
+
+  }
+
+  /* Dropdown Button */
+.dropbtn {
+    background-color: powderblue;
+
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border: none;
+    height: 10px;
+    width: 100px;
+    height: fit-content;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding-left: 10px;
+    border-radius: 50px;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: powderblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+
+
+
+

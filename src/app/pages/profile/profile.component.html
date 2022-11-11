@@ -1,0 +1,54 @@
+<mat-card *ngIf="user">
+    <h3>Your Profile Detail</h3>
+    <mat-card-content>
+       
+        <div class="bootstrap-wrapper">
+
+             <div class="container">
+                <!-- {{user |json}} -->
+                <div class="container text-center">
+
+                    <h1 class="mt20">Yogesh Nirmal</h1>
+                    <!-- <h1 class="mt20">{{user.firstName}}{{user.lastName}}</h1> -->
+                </div>
+                
+                 <div class="row" >
+
+                      <div class="col-md-10 offset-md-1">
+                       <table class="table text-center" >
+                        <tr>
+                            <td>Username</td>
+                            <td>Yogesh3020</td> 
+                            <!-- {{user.firstName}} -->
+                        </tr>
+                        <tr>
+                            <td>FirstName</td>
+                            <td>Yogesh</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>9503833005</td>
+                        </tr>
+                        <tr>
+                            <td>Role</td>
+                            <td>admin</td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td>Active</td>
+                        </tr>
+
+                       </table>
+                
+                     </div>
+                 </div>
+             </div>
+        </div>
+                        
+
+    </mat-card-content>
+    <mat-card-actions class="text-center">
+        <button mat-raised-button color="prmary">Update</button>
+        <button mat-raised-button color="accent">Share</button>
+    </mat-card-actions>
+</mat-card>

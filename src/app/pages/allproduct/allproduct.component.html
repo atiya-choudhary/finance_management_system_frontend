@@ -1,0 +1,19 @@
+
+<div class="wrapper" *ngFor="let p of items">
+  <a href="../product/{{p.productId}}" >
+  <div class="product-img">
+    <img src="../../../assets/samsungS22.jpg" height="420" width="327">
+  </div>
+  <div class="product-info">
+    <div class="product-text">
+      <h1>{{p.productName}}</h1>
+      <!-- <h2>by studio and friends</h2> -->
+      <p>{{p.productDetails}}</p>
+    </div>
+    <div class="product-price-btn">
+      <p><span>{{p.productPrice |currency:'INR'}}</span></p>
+      <button type="button">buy now</button >
+    </div>
+  </div>
+</a>
+</div>

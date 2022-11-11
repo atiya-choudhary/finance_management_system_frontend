@@ -1,0 +1,42 @@
+<!-- <p>navbar works!</p> -->
+<mat-toolbar color="primary">
+    <a  routerLink="/" 
+    mat-icon-button 
+    class="example-icon" 
+    aria-label="Example icon-button with menu icon">
+     <mat-icon>home</mat-icon>
+    </a>
+   <span >FinanceApp</span>
+   <span class="example-spacer"></span>
+
+   <a
+   *ngIf ="!login.isLoggedIn()"
+   [routerLink]="'/login'" 
+   mat-icon-button 
+   class="example-icon favorite-icon margin-left: 20px; margin-right: 20px; " 
+   aria-label="Example icon-button with heart icon">
+     Login
+     </a> 
+
+ 
+   <a *ngIf = "!login.isLoggedIn()"
+   routerLink="/signup" mat-icon-button class="example-icon mr20 ml20" aria-label="Example icon-button with share icon">
+   Register
+   </a> 
+   <button
+    *ngIf = "login.isLoggedIn()"
+    mat-icon-button 
+ class="example-icon mr20 " 
+ mat-button 
+ routerLink="/admin/profile"
+ aria-label="Example icon-button with share icon">
+  {{login.getUser().username}}
+   </button> 
+
+   <a (click)="logout()"
+    *ngIf = "login.isLoggedIn()"
+    mat-icon-button class="example-icon mr20 ml20" aria-label="Example icon-button with share icon">
+   Logout
+   </a> 
+ 
+ </mat-toolbar>

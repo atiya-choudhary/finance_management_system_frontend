@@ -1,0 +1,29 @@
+
+
+
+<div class="session1" style="border-radius: 10px;">
+  <div class="cleft">
+    <img src="../../../assets/samsungS22.jpg" alt="samsungS22" height="420px" width="300px" style="border-radius :9px;">
+  </div>
+  <div class="cright">
+    <div class="text">{{items.productName}}</div>
+    <div class="text">{{items.productDetails}}</div>
+    <div class="text">{{items.productPrice | currency:'INR'}}</div>
+    <!-- <div class="text">10% Off on Select Cards</div> -->
+    <div style="height: 30px;"></div>
+    <a href="../../card"><button class="button" >Buy</button></a>
+    <button class="button">EMI</button>
+   
+
+  <div class="dropdown">
+  <select name="emi" id="emi" class="dropbtn" (change)="calculateEmi($event)">
+    <option value="">select</option>
+    <option *ngFor="let opt of emiOptions">{{opt.values}}</option>
+
+  </select>
+</div>
+</div>
+
+
+
+</div>

@@ -1,0 +1,67 @@
+<div class="bootstrap-wrapper">
+
+    <div class="container">
+
+     
+      
+      <div class="row" >
+
+        <div class="col-md-6 offset-md-3">
+
+        <mat-card >
+            <div class="container text-center">
+                <img src="../../../assets/cardlogo.jpg"  alt="" height="100" width="100" />
+            </div>
+
+          <h1  class="text-center">Enter Card Details</h1>
+
+          <!-- {{card |json}} -->
+          <form (ngSubmit)="formSubmit()" >
+            <!-- card number field -->
+                <mat-form-field class="full-width" appearance="outline">
+                  <mat-label>Card Number</mat-label>
+                  <input required
+                  [(ngModel)]="card.card_no"
+                  name="card_no" 
+                  matInput placeholder="Enter here" />
+                </mat-form-field> <br>
+             
+                 <!-- card name field -->
+                 <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>card Name</mat-label>
+                    <input required
+                    [(ngModel)]="card.card_name"
+                    name="card_name"  matInput placeholder="Enter here" />
+                  </mat-form-field> <br>
+
+
+                     <!-- card type field -->
+                 <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Card Type</mat-label>
+                    <input required [(ngModel)]="card.card_type"
+                    name="card_type" matInput placeholder="Enter here" />
+                  </mat-form-field> <br>
+
+                     <!--cvv field -->
+                 <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>cvv</mat-label>
+                    <input [(ngModel)]="card.cvv" required
+                    name="cvv" matInput placeholder="Enter here" />
+                  </mat-form-field>
+                 
+                  <div class="container">          
+                    <h3 *ngIf="product.productPrice">Total Amount {{product.productPrice |currency:'INR'}}</h3>
+                  </div> 
+                  
+                 <div class="container text-center">          
+                    <button type="submit" mat-raised-button color="primary">pay</button>
+                    <button type="reset" style="margin-left:20px;" mat-raised-button color="accent">Clear</button>
+                </div> 
+          </form>
+        </mat-card>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
